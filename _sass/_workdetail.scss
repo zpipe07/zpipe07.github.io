@@ -1,0 +1,120 @@
+.work-detail {
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+.work-detail__img-link {
+  display: block;
+  border: 3px solid #000;
+  border-radius: 25px;
+  margin: 0 auto 20px auto;
+  max-width: 400px;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  @media (min-width: 768px) {
+    float: left;
+    width: 45%;
+    margin: 0 5% 20px 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #999;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    transform: translateZ(0);
+  }
+  &:before {
+    content: "View the site";
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 22px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
+  &:hover {
+    &:after,
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+.work-detail__img {
+  display: block;
+}
+.work-detail__p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 auto 20px auto;
+  color: $gray;
+  max-width: 400px;
+  text-align: left;
+  @media (min-width: 768px) {
+    width: 50%;
+    max-width: none;
+    margin: 0 0 20px 0;
+    float: right;
+  }
+}
+.work-detail__links-wrapper {
+  padding: 20px 0 0 0;
+  @media (min-width: 768px) {
+    float: right;
+    width: 50%;
+    clear: right;
+  }
+}
+.work-detail__back,
+.work-detail__link {
+  transition: all 0.1s linear;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  color: #000;
+  margin: 0 20px 20px 0;
+  &:hover {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+  }
+}
+.work-detail__a {
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #000;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    height: 2px;
+    transition: all 0.15s linear;
+    background-color: #000;
+  }
+  &:hover {
+    &:after {
+      right: 0;
+    }
+  }
+}

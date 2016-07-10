@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="page-wrapper">
+      {% include header.html %}
+      <div class="page-content">
+        <div class="work-detail clearfix">
+          <a class="work-detail__img-link" href="{{ page.link }}" target="_blank">
+            <img class="work-detail__img" src="/images/{{ page.image }}" alt="{{ page.title }}">
+          </a>
+          {{ page.content }}
+          <div class="work-detail__links-wrapper">
+            <a class="work-detail__link" href="{{ page.link }}" target="_blank">View the site</a>
+            <a class="work-detail__back" href="{{ site.baseurl }}/work/#work">Back to my work</a>
+          </div>
+        </div>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

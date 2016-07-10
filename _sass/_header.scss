@@ -1,0 +1,118 @@
+$lineWidth: 4px;
+
+header {
+  padding: 15px 0;
+}
+
+nav {
+  text-align: center;
+}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  display: inline-block;
+}
+.nav__li {
+  display: inline-block;
+  @media (min-width: 600px) {
+    margin: 0 15px;
+  }
+}
+.nav__a {
+  display: block;
+  position: relative;
+  padding: 15px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: $lineWidth solid transparent;
+  transition: border-bottom 0.1s linear, transform 0.1s linear;
+  font-size: 14px;
+  @media (min-width: 600px) {
+    font-size: 16px;
+    &:hover {
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    height: $lineWidth;
+    transition: all 0.15s ease-in-out;
+    border-radius: 4px;
+  }
+  &:after {
+    bottom: 0;
+    background-color: #000;
+  }
+}
+.nav__icon {
+  font-size: 20px;
+  display: block;
+  opacity: 0.85;
+}
+.nav__text {
+  font-size: 14px;
+  display: block;
+}
+
+[data-nav-js] {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $lineWidth;
+    background-color: #000;
+    transition: transform 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550), width 0.4s ease-in-out;
+    border-radius: 4px;
+  }
+}
+[data-nav-js="index"] {
+  &:before {
+    width: 68px;
+    transform: translateX(0) translateZ(0);
+    @media(min-width: 600px) {
+      width: 73px;
+      transform: translateX(15px) translateZ(0);
+    }
+  }
+}
+[data-nav-js="work"] {
+  &:before {
+    width: 64px;
+    transform: translateX(68px) translateZ(0);
+    @media(min-width: 600px) {
+      width: 69px;
+      transform: translateX(15px + 73px + 30px) translateZ(0);
+    }
+  }
+}
+[data-nav-js="about"] {
+  &:before {
+    width: 69px;
+    transform: translateX(68px + 64px) translateZ(0);
+    @media(min-width: 600px) {
+      width: 75px;
+      transform: translateX(15px + 73px + 30px + 69px + 30px) translateZ(0);
+    }
+  }
+}
+[data-nav-js="contact"] {
+  &:before {
+    width: 80px;
+    transform: translateX(68px + 64px + 69px) translateZ(0);
+    @media(min-width: 600px) {
+      width: 87px;
+      transform: translateX(15px + 73px + 30px + 69px + 30px + 75px + 30px) translateZ(0);
+    }
+  }
+}
+

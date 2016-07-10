@@ -1,0 +1,31 @@
+.cartoon {
+  padding: 25px 0;
+  max-width: 700px;
+  @media (min-width: 600px) {
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+}
+.cartoon__img {
+  display: block;
+}
+.cartoon__img-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 590px;
+  @media (min-width: 600px) {
+    float: left;
+    margin: 50px 15px 0 0;
+  }
+  &:after {
+    // content: "";
+    // position: absolute;
+    // bottom: 45px;
+    // left: -50px;
+    // right: -50px;
+    // height: 3px;
+    // z-index: -1;
+    // background-color: #000;
+  }
+}

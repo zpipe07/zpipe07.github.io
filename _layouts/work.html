@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="page-wrapper">
+      {% include header.html %}
+      <div class="page-content">
+        {{ content }}
+        <ul id="work" class="work">
+        {% for work in site.work %}
+          <li class="work__li">
+            <a class="work__a" href="{{ work.url | prepend: site.baseurl }}" style="background-image: url({{ site.baseurl }}/images/{{ work.image }});">
+              <div class="work__text-wrapper">
+                <div class="work__title">{{ work.title }}</div>
+                <div class="work__description">{{ work.description }}</div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

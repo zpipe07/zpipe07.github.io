@@ -1,0 +1,19 @@
+@keyframes fade-up-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  30% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.load-animation {
+  animation-name: fade-up-in;
+  animation-duration: 1.5s;
+}

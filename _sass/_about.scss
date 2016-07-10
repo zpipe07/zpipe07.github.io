@@ -1,0 +1,16 @@
+.page-wrapper--about {
+  .nav__li:nth-child(3) {
+    .nav__a {
+      border-top: $lineWidth solid;
+    }
+  }
+  .speech-bubble__p a,
+  .speech-bubble__h1 {
+    color: $red;
+  }
+  .speech-bubble__p a {
+    &:after {
+      background: $red;
+    }
+  }
+}

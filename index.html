@@ -1,23 +1,28 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="cartoon clearfix">
+  <div class="speech-bubble">
+    <h1 class="speech-bubble__h1">
+      Hey I'm Zack. I'm a web developer, and I like cartoons.
+    </h1>
+    <p class="speech-bubble__p">
+      This is my website. Check out some of my <a data-js="internal-link" href="/work/">work</a>, learn more <a data-js="internal-link" href="/about/">about</a> me, or <a data-js="internal-link" href="/contact/">contact</a> me.
+    </p>
+  </div>
+  <div class="cartoon__img-wrapper">
+    <img src="{{ site.baseurl }}/images/zack-home-v2.svg" alt="Cartoon image of Zack">
+  </div>
+  <div class="speech-bubble speech-bubble--middle">
+    <p class="speech-bubble__p">
+      I built this site to show off my portfolio. It is built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> - an awesome static site generator. The cartoons were made in Illustrator.
+    </p>
+  </div>
+  <div class="speech-bubble speech-bubble--bottom">
+    <p class="speech-bubble__p">
+      I'm not a professional designer, but I did design this website. I am especially interested in web, UX, &amp; industrial design.
+    </p>
+  </div>
 </div>

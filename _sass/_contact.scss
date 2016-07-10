@@ -1,0 +1,16 @@
+.page-wrapper--contact {
+  .nav__li:nth-child(4) {
+    .nav__a {
+      border-top: $lineWidth solid;
+    }
+  }
+  .speech-bubble__p a,
+  .speech-bubble__h1 {
+    color: $purple;
+  }
+  .speech-bubble__p a {
+    &:after {
+      background: $purple;
+    }
+  }
+}
