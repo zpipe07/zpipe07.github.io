@@ -27,7 +27,7 @@ defaults:
 collections:
   work:
     output: true
-    permalink: /work/:title
+    permalink: /work/:title/
 
 # Excludes
 exclude:

@@ -31,7 +31,13 @@
       e.preventDefault();
       var $this = $(this);
       var url = $this.prop("href");
-      var destination = url.split("/")[3] + (url.split("/")[4] ? "/" + url.split("/")[4] : "/");
+      var urlArray = url.split("/");
+      var destination = urlArray[3] + "/";
+
+      if (urlArray[4]) {
+        destination += (urlArray[4] + "/");
+      }
+
       // unbind click event
       $internalLinks.unbind("click", internalLinkHandler);
       fetchPage(destination);
