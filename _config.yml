@@ -11,6 +11,9 @@ email: zpipe07@gmail.com
 description: Website of Zack Piper the front-end web developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.zackpiper.com" # the base hostname & protocol for your site
+codepenUrl: "http://codepen.io/zpipe07/"
+linkedinUrl: "https://www.linkedin.com/in/zachary-piper-a03ab153"
+githubUrl: "https://github.com/zpipe07"
 
 # Build settings
 markdown: kramdown
