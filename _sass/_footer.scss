@@ -1,6 +1,24 @@
-footer {
+.footer {
   text-align: center;
   padding: 25px 0;
   margin: 50px 0 0 0;
-  color: #999999;
+
+  .copyright {
+    color: #999999;
+    margin: 10px 0;
+  }
+
+  .icon-list {
+    .icon-list__item {
+      margin: 0;
+
+      .icon-list__link {
+        color: #999999;
+
+        .fa {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }

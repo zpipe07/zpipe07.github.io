@@ -4,12 +4,15 @@
   list-style: none;
   text-align: center;
 }
+
 .icon-list__item {
   display: inline-block;
+
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
+
 .icon-list__link {
   padding: 5px;
   color: #000;

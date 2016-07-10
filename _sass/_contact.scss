@@ -4,10 +4,12 @@
       border-top: $lineWidth solid;
     }
   }
+
   .speech-bubble__p a,
   .speech-bubble__h1 {
     color: $purple;
   }
+
   .speech-bubble__p a {
     &:after {
       background: $purple;
