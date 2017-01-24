@@ -12,7 +12,7 @@ description: Website of Zack Piper the front-end web developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.zackpiper.com" # the base hostname & protocol for your site
 codepenUrl: "http://codepen.io/zpipe07/"
-linkedinUrl: "https://www.linkedin.com/in/zachary-piper-a03ab153"
+linkedinUrl: "https://www.linkedin.com/in/zack-piper/"
 githubUrl: "https://github.com/zpipe07"
 
 # Build settings
